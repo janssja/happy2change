@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-orders Overzicht</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <script src="/js/navbar-loader.js"></script>
+
+    <header>
+        <h1>Pre-orders Overzicht</h1>
+    </header>
+    <div id="orders-container">
+        <table id="orders-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Naam</th>
+                    <th>E-mail</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <footer></footer>
+    <script src="/js/footer-loader.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("fetch_orders.php")
+                .then(response => response.json())
+                .then(data => {
+                    const ordersTable = document.getElementById("orders-table").getElementsByTagName("tbody")[0];
+                    data.forEach(order => {
+                        const newRow = ordersTable.insertRow();
+                        newRow.insertCell(0).innerText = order.id;
+                        newRow.insertCell(1).innerText = order.name;
+                        newRow.insertCell(2).innerText = order.email;
+                    });
+                })
+                .catch(error => console.error("Er is een fout opgetreden bij het ophalen van de pre-orders:", error));
+        });
+    </script>
+</body>
+</html>

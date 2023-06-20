@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-order Happy 2 Change</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <script src="/js/navbar-loader.js"></script>
+    <header class="jumbotron jumbotron-fluid bg-info text-white">
+        <div class="container">
+            <h1>Pre-order Happy 2 Change</h1>
+            <p class="lead">Bestel nu al jouw exemplaar</p>
+        </div>
+    </header>
+    <div id="book-container">
+        <img id="book-cover" src="/img/happy2changeboek.png" alt="Boekomslag">
+        <form id="preorder-form">
+            <label for="name">Naam:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            <input type="submit" value="Pre-order">
+        </form>
+        <p class="message"></p>
+    </div>
+    <div id="footer"></div>
+    <script src="/js/footer-loader.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.getElementById("preorder-form").addEventListener("submit", function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+
+            const formData = new FormData();
+            formData.append("name", name);
+            formData.append("email", email);
+
+            fetch("send_email.php", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                const messageElement = document.querySelector(".message");
+                if (data.success) {
+                    messageElement.textContent = "Pre-order succesvol geplaatst!";
+                    messageElement.style.color = "green";
+                } else {
+                    messageElement.textContent = "Er is een fout opgetreden. Probeer het opnieuw.";
+                    messageElement.style.color = "red";
+                }
+            })
+            .catch(error => {
+                const messageElement = document.querySelector(".message");
+                messageElement.textContent = "Er is een fout opgetreden. Probeer het opnieuw.";
+                messageElement.style.color = "red";
+            });
+        });
+    </script>
+    <script src="js/navbar-loader.js"></script>
+</body>
+</html>

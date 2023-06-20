@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #008080;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex-basis: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+}
+
+.column form {
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+}
+
+.column .card.no-border {
+    border: none;
+}
+
+#book-cover {
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 2rem;
+}
+
+
+form {
+    width: 100%;
+    max-width: 400px;
+    border: none;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+#preorder-form input[type="text"],
+#preorder-form input[type="email"] {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    display: inline-block;
+    background-color: #008080;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+    background-color: #006666;
+}
+
+.message {
+    margin: 1rem 0;
+}
+
+.btn-teal {
+    background-color: #008080;
+    border-color: #008080;
+    color: #fff; /* Witte fontkleur */
+}
+
+.btn-teal:hover,
+.btn-teal:focus,
+.btn-teal:active {
+    background-color: #006666;
+    border-color: #006666;
+}
+
+.nieuwsbericht-afbeelding {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+}
+
+.navbar-brand img {
+    height: 1em;
+}
+
+.rounded-shadow {
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px lightgrey
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.blinking-dots {
+    animation: blink 1s infinite;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+    .column {
+        flex-basis: 100%;
+    }
+}
