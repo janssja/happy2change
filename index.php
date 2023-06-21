@@ -15,21 +15,13 @@
 
 <div class="row">
     <div class="column">
-        <div class="card mb-4 no-border">
-            <iframe
-                src="https://www.chatbase.co/chatbot-iframe/lOBXmv4wXtRt4yJPSaqGn"
-                width="100%"
-                height="500"
-                frameborder="0"
-            ></iframe>
-        </div>
-    </div>
-    <div class="column">
         <article class="card mb-4  no-border">
             <img id="book-cover" src="/img/H2Comslag.png" alt="Boekomslag">
             <div class="card-body">
-            Verandering begint hier, bij jou. We zijn verheugd om je de kans te geven om deel uit te maken van deze reis door een pre-order van ons boek te plaatsen voor slechts €29. Dit boek is niet alleen een gids voor positieve verandering, maar ook een platform voor inspirerende verhalen.
-            <br/>Daarnaast zijn we op zoek naar bedrijven die willen bijdragen aan deze beweging. Door sponsor te worden, krijgt jouw bedrijf de kans om met een inspirerende case in ons boek te verschijnen. Samen kunnen we een golf van verandering creëren.
+            <p>Verandering begint hier, bij jou. We zijn verheugd om je de kans te geven om deel uit te maken van de happy 2 change community.</p>
+            <p>door een pre-order van ons boek te plaatsen voor slechts €29. Dit boek is niet alleen een gids voor de implementatie van AI in jouw organisatie, maar ook een platform voor inspirerende verhalen.</p>
+            <p>Daarnaast zoeken we naar organisaties met succesvolle AI implementaties, implementaties met impact. Jouw organisatie krijgt zo de kans om met een inspirerende case in ons boek te verschijnen.</p> 
+            <p>Maak samen met Happy 2 Change van digitale transformaties een positief verhaal.</p>
             </div>
             <form id="preorder-form" action="send_email.php" method="post">
                 <label for="name">Naam:</label>
@@ -50,6 +42,16 @@
                 <a href="nieuwsberichten/nieuwsbrief-juni-1.php" class="btn btn-teal">Lees meer</a>
             </div>
         </article>
+    </div>
+    <div class="column">
+        <div class="card mb-4 no-border">
+            <iframe
+                src="https://www.chatbase.co/chatbot-iframe/lOBXmv4wXtRt4yJPSaqGn"
+                width="100%"
+                height="700"
+                frameborder="0"
+            ></iframe>
+        </div>
     </div>
 </div>
 

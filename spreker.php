@@ -14,10 +14,10 @@
 
     <section class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="column">
                 <img src="img/sprekerfoto.png" alt="Foto van de spreker" class="img-fluid rounded-shadow">
             </div>
-            <div class="col-md-6">
+            <div class="column">
             <h2>Jackie Janssen</h2>
                 <p>
                     Jackie Janssen is een vooraanstaande autoriteit op het gebied van digitale transformatie en kunstmatige intelligentie. Met meer dan 15 jaar ervaring als Board Advisor, Chief Data Officer, Chief Technology Officer en Business Unit Manager bij verschillende organisaties, heeft Jackie een diepgaand inzicht in de uitdagingen en kansen die digitale transformatie biedt.
