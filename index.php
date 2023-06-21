@@ -16,9 +16,6 @@
 <div class="row">
     <div class="column">
         <div class="card mb-4 no-border">
-            <div class="card-body">
-                <div id="generated-text-container" class="blinking-dots">GPT druk aan het werk. Even geduld aub ... Prompt: <i>Genereer een tekst waarin je enerzijds vraagt of de bezoeker interesse heeft in een pre-order van het boek aan slechts 29 euro en geef op een inspirerende manier aan dat we ook nog op zoek zijn naar bedrijven die als sponsor met inspirerende case in het boek willen komen. Het antwoord bevat maximaal 250 tokens.</i></div>
-            </div>
             <iframe
                 src="https://www.chatbase.co/chatbot-iframe/lOBXmv4wXtRt4yJPSaqGn"
                 width="100%"
@@ -46,11 +43,11 @@
     </div>
     <div class="column">
         <article class="card mb-4 no-border">
-            <img src="/img/nieuws van de week.png" class="card-img-top" alt="Nieuws van de week">
+            <img src="/img/nieuwsbrief juni 2023.png" class="card-img-top" alt="Nieuws van de week">
             <div class="card-body">
                 <h5 class="card-title">Nieuws van de week</h5>
-                <p class="card-text">Een overzicht van de nieuwsberichten van 5 tot 7 juni 2023</p>
-                <a href="nieuwsberichten/nieuws-2.php" class="btn btn-teal">Lees meer</a>
+                <p class="card-text">Zelf een chatbot maken, Meta's voicebox wel of niet, de Ai-act, virtueel je kleerkast aanpassen, OpenAI lanceringen, het onwaarschijnlijke verhaal van gpt-engineer en zoveel meer ...  </p>
+                <a href="nieuwsberichten/nieuwsbrief-juni-1.php" class="btn btn-teal">Lees meer</a>
             </div>
         </article>
     </div>
